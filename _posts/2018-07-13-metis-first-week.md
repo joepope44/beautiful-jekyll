@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: 'Metis - First Week '
 date: '2018-07-13'
 image: 'https://unsplash.com/photos/OfYuB4Aby1M'
