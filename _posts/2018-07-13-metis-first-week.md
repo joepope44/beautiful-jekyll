@@ -6,7 +6,7 @@ date: '2018-07-13'
 image: 'https://unsplash.com/photos/OfYuB4Aby1M'
 subtitle: Metis First Project
 ---
-![Photo by Asael Peña on Unsplash]({{site.baseurl}}/img/asael-pena-733700-unsplash.jpg)
+![Photo by Asael Peña on Unsplash]({{site.baseurl}}/img/asael-pena-733700-unsplash.jpg)<!-- .element height="50%" width="50%" -->
 
 ## MTA Turnstile Data Project	
 
@@ -30,8 +30,3 @@ Surprisingly, we didn't just breeze over these topics. We covered them in-depth 
 One of the best takeaways was regarding jupyterlab. This tool is bundled in Anaconda and I stared at it almost everyday for the past six months before trying it. I would use jupyter notebook or another IDE to code. Jupyterlab is basically a tricked-out notebook with easy access to text files, csvs, the command line terminal and more. 
 
 ![jupyterlab.png]({{site.baseurl}}/img/jupyterlab.png)
-
-
-
-
-
