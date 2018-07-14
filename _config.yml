@@ -115,7 +115,7 @@ url-pretty: "Trash Pandas"  # eg. "deanattali.com/beautiful-jekyll"
 "
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+#google_analytics: "UA-122316058-1"
 
 # Google Tag Manager ID
 #gtm: ""
