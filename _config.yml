@@ -103,8 +103,7 @@ url-pretty: "Trash Pandas"  # eg. "deanattali.com/beautiful-jekyll"
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
 #gtag: 
-"<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122316058-1"></script>
+"<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122316058-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
