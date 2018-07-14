@@ -17,7 +17,7 @@ baseurl: ""
 title: "TRASH PANDAS"
 
 # Short description of your site
-description: Digging in data dirt for data gold.
+description: "Digging in data dirt for data gold."
 
 # --- Navigation bar options --- #
 
@@ -46,7 +46,7 @@ navbar-children-col: "#F5F5F5"
 page-col: "#ffffe4"
 link-col: "#008AFF"
 hover-col: "#0085A1"
-footer-col: "#F5F5F5"
+footer-col: "#96ae8d"
 footer-text-col: "#777777"
 footer-link-col: "#404040"
 
@@ -97,7 +97,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "Trash Pandas"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
@@ -122,7 +122,7 @@ url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 # --- Comments --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-disqus: "@joepope44"
+disqus: "joepope44-github-io"
 
 # To use Facebook Comments, fill in a Facebook App ID
 # fb_comment_id: ""
