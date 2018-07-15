@@ -5,16 +5,13 @@ title: Untitled
 ---
 ## Web and PDF Scraping Congressional Finance Disclosure Forms 
 
-Members of Congress are required to publically disclose certain aspects of their finances. This information is made public, but unfortunately is not made accessible in a database. There websites 
+Members of Congress are required to publically disclose certain aspects of their finances. This information is made public, but unfortunately is not made accessible in a database. Their websites are freely accessible, as are numerous pdf files with all the required data. But there is no simple way to aggregate this information and look for trends. 
 
+[House link](http://clerk.house.gov/public_disc/financial-search.aspx)
 
-http://clerk.house.gov/public_disc/financial-search.aspx
+[Senate link](https://efdsearch.senate.gov/search/home/)
 
-
-https://efdsearch.senate.gov/search/home/
-
-
-https://theunitedstates.io/congress-legislators/legislators-current.csv
+[List of Current Members of Congress](https://theunitedstates.io/congress-legislators/legislators-current.csv)
 
 
 https://github.com/opengovernment/readsludge
