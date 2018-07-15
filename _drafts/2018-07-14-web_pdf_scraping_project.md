@@ -57,6 +57,7 @@ Due to time constraints, I was unable to write a working script to repeat the Se
 - Incomplete 
 - Data from pdfs is captured in string format, but still needs to be parsed further. I estimate another 5-10 hours for all data fields. 
 - Failed to handle character encoding issues with Reps names. Accents on 'é', for instance, are not working correctly and this causes the query to fail. 
+- I included some code to email the results to my email address. This will need to be updated for the proper addresses and ported to the Senate code as well.  
 
 
 
