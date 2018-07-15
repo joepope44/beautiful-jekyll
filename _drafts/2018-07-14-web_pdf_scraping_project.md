@@ -19,11 +19,32 @@ Fortunately, it is possible to scrape the websites using python and selenium. I 
 
 [List of Current Members of Congress](https://theunitedstates.io/congress-legislators/legislators-current.csv)
 
-As this was one of my first large-scale projects, a few mistakes were made. The main priority was to write code that worked and would produce results. The House and Senate websites are quite different, so it was necessary to create seperate codes for each. 
+As this was one of my first large-scale projects, a few mistakes were made. I repeat code at times, as I was unable to get functions to return the proper values. I likely append or concatenate some pandas dataframes inefficiently. The main priority was to write code that worked and would produce results. The House and Senate websites are quite different, so it was necessary to create seperate codes for each. 
 
 I tackled the Senate data first. The site requires that the user select a checkbox indicating thhat they understand the prohibitions on using this data. I chose to use Selenium to automate this process. Once past this hurdle, there are a number of fields that can be queried. I took the Senate data from theunitedstates.io repo, checked off 'Current Senator' and selected 'Annual' and 'Periodic Transactions'. For this project, we are seeking to find data the is reported once a year (the Annual reports) and the periodic updates. Most of the PDFs that are returned are electronically filed machine-generated and machine-readable (that is, I am able to parse the text and values), however some documents are scanned and contain handwriting. I chose to leave these alone as out of scope, but they can be parsed using OCR libraries at a later date. It seems that most documents are filed electronically, fortunately.  
 
 The output is organized into four reports; assets, liabilities, PTR A and PTR B data. The assets.csv file will have reports for all Senators that were parsed at this time. Ideally, we will store these data into respective SQL tables, so that one Senator can be queried easily and we can view all of their assets, liabilities and other financial information in one go. 
+
+#### Important Info for Senate Data
+
+senate_stocks.py is the main code. The csv files are the output of the data. Time range of the queries is 
+
+- senate_stocks.py 
+- assets.csv
+- liab.csv
+- ptra.csv
+- ptrb.csv
+
+#### Important Notes regarding python code 
+
+- was necessary to run selenium in headless browser in order to run in cloud 
+- was necessary to use wait.until functions to make selenium wait for elements to load properly before attempting to click. time.sleep works as well, and is used when needed. 
+Like: `wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, xxx))).click()`
+- 
+
+
+
+
 
 
 
