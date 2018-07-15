@@ -19,3 +19,4 @@ Fortunately, it is possible to scrape the websites using python and selenium. I 
 
 [List of Current Members of Congress](https://theunitedstates.io/congress-legislators/legislators-current.csv)
 
+As this was one of my first large-scale projects, a few mistakes were made. The main priority was to write code that worked and would produce results. The House and Senate websites are quite different, so it was necessary to create seperate codes for each. 
