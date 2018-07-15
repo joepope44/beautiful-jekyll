@@ -40,7 +40,10 @@ senate_stocks.py is the main code. The csv files are the output of the data. Tim
 - was necessary to run selenium in headless browser in order to run in cloud 
 - was necessary to use wait.until functions to make selenium wait for elements to load properly before attempting to click. time.sleep works as well, and is used when needed. 
 Like: `wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, xxx))).click()`
-- 
+- The code creates a list of links to respective Senator reports. Then the code goes through each link, extracts text and values, and outputs to the various CSV files per relevant table. 
+
+
+
 
 
 
