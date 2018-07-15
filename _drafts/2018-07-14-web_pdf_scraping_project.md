@@ -17,5 +17,5 @@ The data can be queried, very slowly, at the links here:
 
 Fortunately, it is possible to scrape the websites using python and selenium. I used this list to find current members of Congress so that I could pull reports for each member of Congress. 
 
-[List of Current Members of Congress](https://theunitedstates.io/congress-legislators/legislators-current.csv
+[List of Current Members of Congress](https://theunitedstates.io/congress-legislators/legislators-current.csv)
 
