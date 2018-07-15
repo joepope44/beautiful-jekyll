@@ -13,8 +13,4 @@ Members of Congress are required to publically disclose certain aspects of their
 
 [List of Current Members of Congress](https://theunitedstates.io/congress-legislators/legislators-current.csv)
 
-
-https://github.com/opengovernment/readsludge
-
-
-
+[Github Repo](https://github.com/opengovernment/readsludge)
