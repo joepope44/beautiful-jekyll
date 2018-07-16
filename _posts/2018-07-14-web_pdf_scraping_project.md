@@ -2,13 +2,13 @@
 layout: post
 published: true
 title: 'Web and PDF Scraping Congressional Finance Disclosure Forms '
-subtitle: 'Congressional Financial Data'
+subtitle: Congressional Financial Data
 ---
 ## Web and PDF Scraping Congressional Finance Disclosure Forms 
 
 [Github Repo](https://github.com/opengovernment/readsludge)
 
-Members of Congress are required to publically disclose certain aspects of their finances. This information is made public, but unfortunately is not made accessible in a database. Their websites are freely accessible, as are numerous pdf files with all the required data. But there is no simple way to aggregate this information and look for trends. 
+Members of Congress are required to publically disclose certain aspects of their finances. This information is made public, but unfortunately is only accessible in awkwardly formatted html forms or PDF files. The government has made the documens public, but they have not made the data machine readable. There is no simple way for citizens to aggregate all of this information and look for interesting or alarming trends for their elected representatives. 
 
 The data can be queried, very slowly, at the links here: 
 
@@ -16,19 +16,19 @@ The data can be queried, very slowly, at the links here:
 
 [Senate link](https://efdsearch.senate.gov/search/home/)
 
-Fortunately, it is possible to scrape the websites using python and selenium. I used this list to find current members of Congress so that I could pull reports for each member of Congress. 
+Fortunately, it is possible to scrape the websites using python and selenium. I used the list below to find current members of Congress so that I could pull reports for each member.
 
 [List of Current Members of Congress](https://theunitedstates.io/congress-legislators/legislators-current.csv)
 
 #### Disclaimer
 
-As this was one of my first large-scale projects, a few mistakes were made. I repeat code at times, as I was unable to get functions to return the proper values. I likely append or concatenate some pandas dataframes inefficiently. Refactoring is certainly needed here, but was not done due to time constraints. The main priority was to write code that worked and would produce results. The House and Senate websites are organized quite differently, so it was necessary to create seperate codes for each. 
+As this was one of my first large-scale projects, a few mistakes were made. Code is repeated at times, as I was unable to get functions to return the proper values. I likely append or concatenate some pandas dataframes inefficiently. Refactoring is certainly needed here, but was not done due to time constraints. The main priority was to write code that worked and would produce results. The House and Senate websites are organized quite differently, so it was necessary to create seperate scrapers and processes for each. 
 
 #### Important Info for Senate Data
 
-I tackled the Senate data first. The site requires that the user select a checkbox indicating thhat they understand the prohibitions on using this data. I chose to use Selenium to automate this process. Once past this hurdle, there are a number of fields that can be queried. I took the Senate data from theunitedstates.io repo, checked off 'Current Senator' and selected 'Annual' and 'Periodic Transactions'. For this project, we are seeking to find data the is reported once a year (the Annual reports) and the periodic updates. Most of the PDFs that are returned are electronically filed machine-generated and machine-readable (that is, I am able to parse the text and values), however some documents are scanned and contain handwriting. I chose to leave these alone as out of scope, but they can be parsed using OCR libraries at a later date. It seems that most documents are filed electronically, fortunately.  
+I tackled the Senate data first. The site requires that the user select a checkbox indicating thhat they understand the prohibitions on using the data. I chose to use Selenium to automate this process. Once past this hurdle, there are a number of fields that can be queried. I took the Senate data from theunitedstates.io repo, checked off 'Current Senator' and selected 'Annual' and 'Periodic Transactions'. For this project, we are seeking to find data the is reported once a year (the Annual reports) and the periodic updates. Most of the PDFs that are returned are electronically filed, machine-generated and machine-readable (that is, I am able to parse the text and values), however some documents are scanned and contain handwriting. I chose to leave these alone and consider them out of scope, but they can be parsed using OCR libraries at a later date. It seems that most documents are filed electronically, fortunately.  
 
-The output is organized into four reports; assets, liabilities, PTR A and PTR B data. The assets.csv file will have reports for all Senators that were parsed at this time. Ideally, we will store these data into respective SQL tables, so that one Senator can be queried easily and we can view all of their assets, liabilities and other financial information in one go. 
+The output is organized into four reports; assets, liabilities, PTR A and PTR B data. PTR A is data filed after the annual reports. PTR B relates to transactions by the spouse. For example, the assets.csv file will have reports for all Senators that were parsed. Ideally, we will store these data into respective SQL tables, so that one Senator can be queried easily and we can view all of their assets, liabilities and other financial information in one go. 
 
 senate_stocks.py is the main code. The csv files are the output of the data. 
 
@@ -47,6 +47,7 @@ senate_stocks.py is the main code. The csv files are the output of the data.
 Like: `wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, xxx))).click()`
 - The code creates a list of links to respective Senator reports. Then the code goes through each link, extracts text and values, and outputs to the various CSV files per relevant table. 
 - Start date for report querying is January 1, 2017, written exactly as '01/01/2017'. End date is blank. 
+- The reports will run daily via a cron job. 
 
 
 #### Important Info for House Data
