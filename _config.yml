@@ -25,7 +25,7 @@ description: "Digging in data dirt for data gold."
 navbar-links:
   About Me: "aboutme"
   Friendly Sites:
-  	- Metis: "http://www.thisismetis.com"
+    - Metis: "http://www.thisismetis.com"
     - Civic Hall: "http://www.civichall.org"
     - Beta NYC: "http://www.beta.nyc/"
     - DataKind: "http://datakind.org"
