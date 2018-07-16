@@ -38,7 +38,7 @@ senate_stocks.py is the main code. The csv files are the output of the data.
 - ptra.csv
 - ptrb.csv
 
-
+ 
 #### Important Notes regarding Senate python code
 
 - I ignored anything with 'paper' in the url, as these will require OCR to parse. 
