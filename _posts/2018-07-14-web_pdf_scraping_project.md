@@ -2,6 +2,7 @@
 layout: post
 published: true
 title: 'Web and PDF Scraping Congressional Finance Disclosure Forms '
+subtitle: 'Congressional Financial Data'
 ---
 ## Web and PDF Scraping Congressional Finance Disclosure Forms 
 
