@@ -18,8 +18,16 @@ Another promising data source was the [Gun Violence Archive](http://www.gunviole
 
 Unfortunately, the Gun Violence Archive only had data for the past 72 hours on their site. After a little research I found that a much larger data set, encompassing several years, was on Kaggle. Buried deep in a Discussion forum on the [site](https://www.kaggle.com/jameslko/gun-violence-data/discussion), I was able to see that there were problems with the Gun Violence Archive as a source. For one, they don't want people using their data without going through them. They deliberately spike their data by inserting phony records. This creates a signature that they are then able to spot in the wild. Most noticeably, the 2017 mass shooting in Las Vegas incident is omitted, which is a huge outlier. The explanation is detailed [here](https://www.kaggle.com/jameslko/gun-violence-data/discussion/55307). 
 
+#Tree Regression
+
+
+![Gun Death Tree Regression](https://jenny-listman.netlify.com/img/GunDeathTreeForWebsite.jpg)
+
+
+
 In the end, I decided to not use the Gun Violence Archive data. The CDC data and State Policy Index provided enough information for me to dig into. I learned a lot about handling multicollinearity, regularization and feature selection, but also about one of the most troubling issues of our time. I was unaware that firearm related suicides outpace homicides 2:1, for instance. I also discovered the new and [eminent threat](https://www.wired.com/story/a-landmark-legal-shift-opens-pandoras-box-for-diy-guns/) posed by at-home 3-D printed "ghost guns". We could really figure this whole "2nd Amendment" thing out once and for all and enact true common sense firearm legislation nationwide, only to have anyone with a 3D printer to circumvent those laws and print their own gun (and ammo?). Like most public policy issues, technology is changing the debate as it's happening. 
 
+[Homicide Rate (crude rate) vs. Teenage Birth Rate, per state and year (per 100K people) ](/img/crude_rate.tiff)
 
 
-
+text
