@@ -1,7 +1,7 @@
 ---
 layout: post
 published: false
-title: ''
+title: 'Linear Regression '
 ---
 ## Project -- Linear Regression - State Policy On Firearm Usage
 
