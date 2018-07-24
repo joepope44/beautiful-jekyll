@@ -29,6 +29,6 @@ In the end, I decided to not use the Gun Violence Archive data. The CDC data and
 
 I also discovered the new and [eminent threat](https://www.wired.com/story/a-landmark-legal-shift-opens-pandoras-box-for-diy-guns/) posed by at-home 3-D printed "ghost guns". We could unite as a country and figure out this whole "2nd Amendment" thing once and for all, only to have anyone with a 3D printer circumvent those laws and print their own gun (and ammo?). Like most public policy issues, technology is changing the debate as it's happening. 
 
-[Homicide Rate (crude rate) vs. Teenage Birth Rate, per state and year (per 100K people) ](/img/crude_rate.tiff)
 
+![crude_rate.tiff]({{site.baseurl}}/img/crude_rate.tiff)
 
